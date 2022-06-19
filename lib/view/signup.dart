@@ -125,7 +125,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const Text(
-                  "Have an account ?",
+                  "have an account ?",
                   style: TextStyle(
                     color: Colors.grey,
                   ),
