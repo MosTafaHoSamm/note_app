@@ -1,5 +1,4 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
+ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:note_book/components/custom_text_form.dart';
 import 'package:note_book/controller/login_contoller.dart';
@@ -67,18 +66,18 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             Container(
               clipBehavior: Clip.antiAlias,
-              decoration: BoxDecoration(
+              decoration:const BoxDecoration(
                   // borderRadius: BorderRadius.all(Radius.circular(10))
                   //
                   ),
               child: MaterialButton(
-                shape: RoundedRectangleBorder(
+                shape:const  RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(20))),
-                padding: EdgeInsetsDirectional.fromSTEB(50, 5, 50, 5),
+                padding:const EdgeInsetsDirectional.fromSTEB(50, 5, 50, 5),
                 onPressed: () {
                   print('Login');
                 },
-                child: Text(
+                child:const Text(
                   "Login",
                   style: TextStyle(color: Colors.white, fontSize: 20),
                 ),
@@ -91,7 +90,7 @@ class _LoginScreenState extends State<LoginScreen> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
+                const Text(
                   "Don\'t have an account ?",
                   style: TextStyle(
                     color: Colors.grey,
@@ -101,7 +100,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   onPressed: () {
                     Get.to(const SignUpScreen());
                   },
-                  child: Text('Signup'),
+                  child:const Text('Signup'),
                   style: ButtonStyle(
                       foregroundColor: MaterialStateProperty.all(Colors.pink)),
                 )
