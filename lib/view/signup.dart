@@ -4,6 +4,8 @@ import 'package:get/get.dart';
 import 'package:note_book/components/custom_text_form.dart';
 import 'package:note_book/controller/login_contoller.dart';
 import 'package:note_book/view/login.dart';
+import 'package:http/http.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({Key? key}) : super(key: key);

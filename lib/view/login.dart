@@ -2,6 +2,7 @@
 import 'package:get/get.dart';
 import 'package:note_book/components/custom_text_form.dart';
 import 'package:note_book/controller/login_contoller.dart';
+import 'package:note_book/view/home.dart';
 import 'package:note_book/view/signup.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -75,6 +76,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     borderRadius: BorderRadius.all(Radius.circular(20))),
                 padding:const EdgeInsetsDirectional.fromSTEB(50, 5, 50, 5),
                 onPressed: () {
+                  Get.off(HomeScreen());
                   print('Login');
                 },
                 child:const Text(
